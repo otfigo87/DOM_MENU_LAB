@@ -9,7 +9,7 @@ var menuLinks = [
 //Task1
 const mainEl = document.querySelector("main");
 mainEl.style.backgroundColor = "var(--main-bg)";
-mainEl.innerHTML = "<h1>SET Rocks!</h1>";
+mainEl.innerHTML = "<h1>SEI Rocks!</h1>";
 mainEl.classList.add("flex-ctr");
 
 //Task2
@@ -21,8 +21,8 @@ topMenuEl.classList.add("flex-around");
 //Task3
 menuLinks.forEach((link) => {
     const myLink = document.createElement("a");
-    myLink.setAttribute("href", `${link.href}`);
-    myLink.textContent = `${link.text}`;
+    myLink.setAttribute("href", link.href);
+    myLink.textContent = link.text;
     topMenuEl.appendChild(myLink);
 })
 
